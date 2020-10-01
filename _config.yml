@@ -1,0 +1,68 @@
+
+name: &name "Yiannis Papadopoulos"
+email: &email giannis.papadopoulos@gmail.com
+github_username: &github_username ipapadop
+gitlab_username: &gitlab_username ipapadop
+twitter_username: &twitter_username ipapadop
+stackoverflow_username: &stackoverflow_username "487362"
+linkedin_username: &linkedin_username ipapadop
+#orcid_id: 0000-0003-4983-5052
+
+title: Yiannis Papadopoulos
+description: > # this means to ignore newlines until "baseurl:"
+  Mostly C++, Supercomputing, some ML.
+baseurl: ""
+url: "https://ipapadop.github.io"
+google_analytics: UA-178385228-1
+show_excerpts: true
+show_downloads: false
+show_drafts: false
+permalink: /:categories/:year/:month/:day/:title/
+
+author:
+  name: *name
+  email: *email
+
+markdown: kramdown
+#theme: minima
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+#
+# minima options
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+minima:
+  social_links:
+    twitter: *twitter_username
+    github: *github_username
+    linkedin: *linkedin_username
+    stackoverflow: "487362"
+    gitlab:
+     - username: *gitlab_username
+       instance: gitlab.com
+
+header_pages:
+ - about.md
+ 
+disqus:
+  shortname: ipapadop-github-pages
+
+# jekyll-seo-tag
+twitter:
+  username: *twitter_username
+
+defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      comments: true
