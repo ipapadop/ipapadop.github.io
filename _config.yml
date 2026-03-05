@@ -13,7 +13,7 @@ author:
   name: *name
   email: *email
 
-description: > # this means to ignore newlines until "baseurl:"
+description: >-
   Mostly C++, Supercomputing, some ML.
 
 remote_theme: jekyll/minima@d4d779a
@@ -26,7 +26,6 @@ plugins:
 baseurl: ""
 url: "https://ipapadop.github.io"
 google_analytics: UA-178385228-1
-show_excerpts: true
 show_downloads: false
 show_drafts: false
 permalink: /:categories/:year/:month/:day/:title/
@@ -39,8 +38,12 @@ markdown: kramdown
 minima:
   skin: classic
 
-  header_pages:
+  nav_pages:
     - about.md
+
+  show_excerpts: true
+
+  google_analytics: UA-178385228-1
 
   date_format: "%b %-d, %Y"
 
@@ -51,11 +54,15 @@ minima:
     - title: LinkedIn
       icon: linkedin
       url: "https://www.linkedin.com/in/ipapadop/"
-    twitter: *twitter_username
-    stackoverflow: "487362"
-    gitlab:
-     - username: *gitlab_username
-       instance: gitlab.com
+    - title: Twitter
+      icon: x-twitter
+      url: "https://twitter.com/ipapadop"
+    - title: StackOverflow
+      icon: stack-overflow
+      url: "https://stackoverflow.com/users/487362"
+    - title: GitLab
+      icon: gitlab
+      url: "https://gitlab.com/ipapadop"
  
 disqus:
   shortname: ipapadop-github-pages
