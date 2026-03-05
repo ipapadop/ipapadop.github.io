@@ -14,7 +14,7 @@ author:
   email: *email
 
 description: >-
-  Mostly C++, Supercomputing, some ML.
+  Mostly C++, Supercomputing, some AI.
 
 remote_theme: jekyll/minima@d4d779a
 
@@ -54,9 +54,9 @@ minima:
     - title: LinkedIn
       icon: linkedin
       url: "https://www.linkedin.com/in/ipapadop/"
-    - title: Twitter
+    - title: X
       icon: x-twitter
-      url: "https://twitter.com/ipapadop"
+      url: "https://x.com/ipapadop"
     - title: StackOverflow
       icon: stack-overflow
       url: "https://stackoverflow.com/users/487362"
@@ -66,10 +66,6 @@ minima:
  
 disqus:
   shortname: ipapadop-github-pages
-
-# jekyll-seo-tag
-twitter:
-  username: *twitter_username
 
 defaults:
   # Post defaults
