@@ -1,22 +1,35 @@
 name: &name "Yiannis Papadopoulos"
 email: &email giannis.papadopoulos@gmail.com
-github_username: &github_username ipapadop
-gitlab_username: &gitlab_username ipapadop
-twitter_username: &twitter_username ipapadop
-stackoverflow_username: &stackoverflow_username "487362"
-linkedin_username: &linkedin_username ipapadop
-#orcid_id: 0000-0003-4983-5052
 
 title: Yiannis Papadopoulos
+lang: en
 
 author:
   name: *name
   email: *email
+  url: "https://ipapadop.github.io"
+
+# jekyll-seo-tag: profile photo / default social preview image and
+# structured data (JSON-LD "sameAs") linking your profiles.
+logo: "https://github.com/ipapadop.png"
+image: "https://github.com/ipapadop.png"
+twitter:
+  username: ipapadop
+  card: summary
+social:
+  name: *name
+  links:
+    - "https://github.com/ipapadop"
+    - "https://www.linkedin.com/in/ipapadop/"
+    - "https://x.com/ipapadop"
+    - "https://stackoverflow.com/users/487362"
+    - "https://gitlab.com/ipapadop"
+    - "https://orcid.org/0000-0003-4983-5052"
 
 description: >-
   Mostly C++, Supercomputing, some AI.
 
-remote_theme: jekyll/minima@d4d779a
+remote_theme: jekyll/minima@4de3223
 
 plugins:
   - jekyll-feed
@@ -25,25 +38,29 @@ plugins:
 
 baseurl: ""
 url: "https://ipapadop.github.io"
-google_analytics: UA-178385228-1
-show_downloads: false
-show_drafts: false
+# Universal Analytics (UA-*) was shut down by Google in 2023. To re-enable
+# analytics, create a GA4 property and set its Measurement ID here:
+# google_analytics: G-XXXXXXXXXX
 permalink: /:categories/:year/:month/:day/:title/
 
 markdown: kramdown
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 
 #
 # minima options
 
 minima:
-  skin: classic
+  skin: auto  # follows the visitor's light/dark preference
 
   nav_pages:
     - about.md
 
   show_excerpts: true
-
-  google_analytics: UA-178385228-1
 
   date_format: "%b %-d, %Y"
 
@@ -63,7 +80,10 @@ minima:
     - title: GitLab
       icon: gitlab
       url: "https://gitlab.com/ipapadop"
- 
+    - title: ORCID
+      icon: orcid
+      url: "https://orcid.org/0000-0003-4983-5052"
+
 disqus:
   shortname: ipapadop-github-pages
 
@@ -73,4 +93,5 @@ defaults:
       path: "_posts"
       type: posts
     values:
+      layout: post
       comments: true
